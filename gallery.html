@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="images/Logos.jpg">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>TropicalTravelgt</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Tropical<span>Travelgt</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Inicio</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Galeria</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Lugares</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">Aprende</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex header-sm">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Galeria</h1>
+                    <p>Aquí puedes ver muchos bellos lugares que puedes visitar en Izabal.</p>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- gallery section -->
+        <div id = "gallery" class = "py-4">
+            <div class = "container">
+                <div class = "gallery-row">
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-1.jpg" alt = "gallery img">     
+                        <span class = "zoom-icon">                         
+                            <p class = "text">AMATIQUE BAY</p>
+                            <i class = "fas fa-search-plus"></i>
+                            
+                            
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-2.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">CASTILLO SAN FELIPE</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-3.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">LAS ESCOBAS</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-4.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">PLAYA BLANCA</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-5.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">PUNTA DE PALMA</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-6.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">PLAYA DE QUEHUECHE</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-7.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">RIO DULCE</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-8.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">RIO SARSTÜN</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                    <div class = "gallery-item shadow">
+                        <img src = "images/gallery-9.jpg" alt = "gallery img">
+                        <span class = "zoom-icon">
+                            <p class = "text">ENSANADA VERDE</p>
+                            <i class = "fas fa-search-plus"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of gallery section -->
+
+        <!-- img modal -->
+        <div id = "img-modal-box">
+            <div id = "img-modal">
+                <button type = "button" id = "modal-close-btn" class = "flex">
+                    <i class = "fas fa-times"></i>
+                </button>
+                <button type = "button" id = "prev-btn" class = "flex">
+                    <i class = "fas fa-chevron-left"></i>
+                </button>
+                <button type = "button" id = "next-btn" class = "flex">
+                    <i class = "fas fa-chevron-right"></i>
+                </button>
+                <img src = "images/gallery-1.jpg">
+            </div>
+        </div>
+        <!-- end of img modal -->
+
+        <!-- popular places section -->
+        <section id = "popular" class = "py-4">
+            <div class = "title-wrap">
+                <span class = "sm-title">Te mostramos algunos</span>
+                <h2 class = "lg-title">Lugares Populares</h2>
+            </div>
+
+            <div class = "popular-row">
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-1.jpg" alt = "">
+                    <div>
+                        <span>Malecón, Puerto Barrios</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;462 reviews</li>
+                        </ul>
+                        <p class = "text">Disfrute de su tranquilidad generada por el paisaje y la brisa marina.</p>
+                        <p class = "text">Dirección: Séptima calle, primera avenida, Puerto Barrios.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-2.jpg" alt = "">
+                    <div>
+                        <span>Parque Reyna Barrios</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;562 reviews</li>
+                        </ul>
+                        <p class = "text">Al parque Reyna Barrios convergen muchísimas personas diariamente para disfruta momentos de tranquilidad, descansar o caminar por sus pasillos.</p>
+                        <p class = "text">Dirección: Octava calle,octava avenida,Puerto  Barrios.</p>
+                        
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-3.jpg" alt = "">
+                    <div>
+                        <span>Siete Altares</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;741 reviews</li>
+                        </ul>
+                        <p class = "text">Es un hermoso destino natural ubicado en el    municipio de Livingston. Está formado por una serie    de cascadas y piscinas naturales de agua fresca. Además, cuenta con una bella vegetación en los alrededores.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-4.jpg" alt = "">
+                    <div>
+                        <span>Hotel del Norte</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;243 reviews</li>
+                        </ul>
+                        <p class = "text">Hotel del Norte un clásico edificio de madera, grande   tropical, con pasillos, fue construido en el año 1892. Está ubicado a un costado del malecón con vista a la bahía de Amatique.</p>
+                        <p class = "text">Dirección: Séptima calle, primera avenida, Puerto Barrios.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-5.jpg" alt = "">
+                    <div>
+                        <span>Playa de Punta de Manabique</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;438 reviews</li>
+                        </ul>
+                        <p class = "text">En ella se encuentra corales y arrecífes. Un lugar     ideal para los amantes del buceo, convirtiéndolo en   uno de los ecosistemas más raros de Guatemala.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-6.jpg" alt = "">
+                    <div>
+                        <span>Hotel Marbrissas</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;642 reviews</li>
+                        </ul>
+                        <p class = "text">Es una excelente opción para hospedarse en Puerto Barrios, pueden refrescarse en la piscina al aire libre    o disfrutar de la comida en la Bahía, también cuenta con un bar y otros servicios.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-7.jpg" alt = "">
+                    <div>
+                        <span>Alex House</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;52 reviews</li>
+                        </ul>
+                        <p class = "text">Este lugar es conocido por sus ambientes frescos y porque en tu visita puedes compartir con los animales como guacamayas y hacer caminatas rodeadas de naturaleza, entre otros.</p>
+                    </div>
+                </div>
+
+                <div class = "popular-item shadow">
+                    <img src = "images/popular-8.jpg" alt = "">
+                    <div>
+                        <span>El Faro</span>
+                        <ul class = "rating flex">
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star"></i></li>
+                            <li><i class = "fas fa-star-half-alt"></i></li>
+                            <li>&nbsp;38 reviews</li>
+                        </ul>
+                        <p class = "text"> El Faro ha sido el lugar para campamentos,viajes misioneros, retiros,centro de conferencias y programas de extensión comunitaria,alcanzando a más de 26 comunidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of popular places section -->
+        
+
+        <!-- footer -->
+        <footer class = "py-4">
+            <div class = "container footer-row">
+                <div class = "footer-item">
+                    <a href = "index.html" class = "site-brand">
+                        Tropical<span>Travelgt</span>
+                    </a>
+                    <p class = "text">Tropical Travelgt, fue pensado y creado por estudiantes de la carrera de Ingenieria en sistemas, la cual tiene como visión el dar a conocer la bellaza con la que cuenta el Municipio de Puerto Barrios.</p>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Síguenos en nuestras redes sociales: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "https://www.facebook.com/profile.php?id=100093030257159"target="_blank">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/tropicaltravelgt/"target="_blank">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://twitter.com/TTravelgt" target="_blank">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.pinterest.com/Tropicaltravelgt/" target="_blank">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "mailto:tropicaltravelgt@gmail.com">
+                                <i class = "fab fa-google-plus"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Lugares populares:</h2>
+                    <ul>
+                        <li><a href = "#">Malecón, Puerto Barrios</a></li>
+                        <li><a href = "#">Muelle 17, Puerto Barrios</a></li>
+                        <li><a href = "#">Las Escobas, Santo Tomás</a></li>
+                        <li><a href = "#">Punto de Palma, Santo Tomás</a></li>
+                        <li><a href = "#">Barrio El Rastro, Puerto Barrios</a></li>
+                    </ul>
+                </div>
+
+                <div class = "subscribe-form footer-item">
+                    <h2>Suscríbete para recibir novedades!</h2>
+                    <form class = "flex">
+                        <input type = "email" placeholder="Ingresa tu correo" class = "form-control">
+                        <input type = "submit" class = "btn" value = "Suscríbete">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // image modal
+            const allGalleryItem = document.querySelectorAll('.gallery-item');
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0;
+
+            allGalleryItem.forEach((galleryItem) => {
+                galleryItem.addEventListener('click', () => {
+                    imgModalDiv.style.display = "block";
+                    let imgSrc = galleryItem.querySelector('img').src;
+                    imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                    showImageContent(imgIndex);
+                })
+            });
+
+            // next click
+            nextBtn.addEventListener('click', () => {
+                imgIndex++;
+                if(imgIndex > allGalleryItem.length){
+                    imgIndex = 1;
+                }
+                showImageContent(imgIndex);
+            });
+
+            // previous click
+            prevBtn.addEventListener('click', () => {
+                imgIndex--;
+                if(imgIndex <= 0){
+                    imgIndex = allGalleryItem.length;
+                }
+                showImageContent(imgIndex);
+            });
+
+            function showImageContent(index){
+                imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+            }
+
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            })
+        </script>
+    </body>
+</html>

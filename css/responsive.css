@@ -59,7 +59,7 @@
                 align-items: flex-start;
     }
 
-    .gallery-row, .popular-row, .blog-row, .facts-row{
+    .gallery-row, .popular-row, .blog-row, .facts-row, .hotel-row, .guia-row, .bancos-row, .restaurante-row, .plaza-row, .auto-row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -134,7 +134,7 @@
         gap: 2rem;
     }
 
-    .popular-row, .blog-row{
+    .popular-row, .blog-row,.hotel-row, .guia-row, .bancos-row, .restaurante-row, .plaza-row, .auto-row{
         grid-template-columns: repeat(3, 1fr);
     }
     .about-row{

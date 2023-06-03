@@ -89,14 +89,30 @@
     margin: 1.6rem 0;
 }
 .nav-link{
-    color: #fff;
+    color: #ffffff;
     font-size: 1.2rem;
     -webkit-transition: var(--trans);
     -o-transition: var(--trans);
     transition: var(--trans);
 }
-.nav-link:hover{
+.nav-link :hover{
     opacity: 0.8;
+}
+.navbar-nav li a{
+   text-decoration: none;
+   color: #fffefe;
+   padding: 15px;
+   display: block;
+}
+
+.navbar-nav li {
+    display: inline-block;
+    text-align: center;
+
+}
+.navbar-nav li a:hover{
+    background: #7fd1f7;
+
 }
 
 /* header */
@@ -377,50 +393,6 @@ header{
     display: inline-block;
 }
 
-/* testimonials */
-#testimonials{
-    background-color: var(--light-grey);
-}
-.test-item{
-    border: 2px solid var(--light-grey);
-    padding: 2rem 1rem;
-    position: relative;
-    background-color: #fff;
-    border-radius: 0.2rem;
-    margin: 2rem 0 14rem 0;
-}
-.test-item::after{
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #fff;
-}
-.test-item-info{
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    text-align: center;
-}
-.test-item-info img{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    margin: 1rem;
-}
-.test-item-info h3{
-    font-size: 1rem;
-}
 
 /* video */
 .video-wrapper{
@@ -569,13 +541,13 @@ header.header-sm{
     cursor: pointer;
 }
 .gallery-item::after{
-    content: "";
+    content: "  ";
     z-index: 1;
-    position: absolute;
+    position:absolute;
     bottom: 0;
-    top: 0;
-    right: 0;
-    left: 0;
+    top:3;
+    right: 3;
+    left: 3;
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
     background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
     background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
@@ -845,4 +817,304 @@ header.header-sm{
     font-size: 1.2rem;
     display: block;
     margin-bottom: 1rem;
+}
+
+#hotel{
+    background-color: var(--light-grey);
+}
+.hotel-item{
+    background-color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.hotel-item-top{
+    position: relative;
+}
+.hotel-date{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.hotel-item-bottom{
+    padding: 2rem 1rem;
+}
+.hotel-item-bottom span{
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 1rem;
+}
+.hotel-item-bottom a{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.hotel-item-bottom a:hover{
+    opacity: 0.8;
+}
+
+#guia{
+    background-color: var(--light-grey);
+}
+.guia-item{
+    background-color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.guia-item-top{
+    position: relative;
+}
+.guia-date{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.guia-item-bottom{
+    padding: 2rem 1rem;
+}
+.guia-item-bottom span{
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 1rem;
+}
+.guia-item-bottom a{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.guia-item-bottom a:hover{
+    opacity: 0.8;
+}
+
+#bancos{
+    background-color: var(--light-grey);
+}
+.bancos-item{
+    background-color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.bancos-item-top{
+    position: relative;
+}
+.bancos-date{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.bancos-item-bottom{
+    padding: 2rem 1rem;
+}
+.bancos-item-bottom span{
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 1rem;
+}
+.bancos-item-bottom a{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.bancos-item-bottom a:hover{
+    opacity: 0.8;
+}
+
+#restaurante{
+    background-color: var(--light-grey);
+}
+.restaurante-item{
+    background-color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.restaurante-item-top{
+    position: relative;
+}
+.restaurante-date{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.restaurante-item-bottom{
+    padding: 2rem 1rem;
+}
+.restaurante-item-bottom span{
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 1rem;
+}
+.restaurante-item-bottom a{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.restaurante-item-bottom a:hover{
+    opacity: 0.8;
+}
+
+#plaza{
+    background-color: var(--light-grey);
+}
+.plaza-item{
+    background-color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.plaza-item-top{
+    position: relative;
+}
+.plaza-date{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.plaza-item-bottom{
+    padding: 2rem 1rem;
+}
+.plaza-item-bottom span{
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 1rem;
+}
+.plaza-item-bottom a{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.plaza-item-bottom a:hover{
+    opacity: 0.8;
+}
+
+#auto{
+    background-color: var(--light-grey);
+}
+.auto-item{
+    background-color: #fff;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.auto-item-top{
+    position: relative;
+}
+.auto-date{
+    position: absolute;
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.5rem;
+    height: 38px;
+    min-width: 160px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: -19px;
+    left: 5%;
+}
+.auto-item-bottom{
+    padding: 2rem 1rem;
+}
+.auto-item-bottom span{
+    text-transform: uppercase;
+    color: var(--dark);
+    opacity: 0.7;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 1rem;
+}
+.auto-item-bottom a{
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    display: block;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+    -webkit-transition: var(--trans);
+    -o-transition: var(--trans);
+    transition: var(--trans);
+}
+.auto-item-bottom a:hover{
+    opacity: 0.8;
 }
